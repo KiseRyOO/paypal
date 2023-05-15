@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="estilos.css">
+
+
+</head>
+<span class="title">
+    <center>
+        <strong>Pay</strong><span>Pal</span>
+    </center>
+    
+    <form>
+        <div class="form_container">
+            <div class="form_group">
+                <input type="text" id="name" class="form_input" placeholder=" ">
+                <label for="name" class="form_label">Nombre:</label>
+                <span class="form_line"></span>
+            </div>
+
+                <div class="form_group">
+                    <input type="email" id="email" class="form_input" placeholder=" ">
+                    <label for="email" class="form_label">Correo:</label>
+                    <span class="form_line"></span>
+                </div>
+
+                <div class="form_group">
+                    <input type="number" id="monto" class="form_input" placeholder=" ">
+                    <label for="monto" class="form_label">Monto:</label>
+                    <span class="form_line"></span>
+                </div>
+
+                <script src="https://www.paypal.com/sdk/js?client-id=ATyENStXjEu1Cl1d5VJMudRThlG-VfjQqf7B-_TxeQPB3Mx-Y47pcJcaHhGDEpqKuioNKuYo93TtLY2c"></script>
+                <div id="paypal-button-container"></div>
+                <script>
+                    paypal.Buttons().render('#paypal-button-container');
+                </script>
+
+        </div>
+
+
+
+    </form>
